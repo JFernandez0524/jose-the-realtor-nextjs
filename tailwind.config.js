@@ -43,7 +43,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern':
-          "linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.9)), url('/assets/images/hero-image.jpg')",
+          "linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.9)), url('/images/hero-image.jpg')",
       },
     },
   },
