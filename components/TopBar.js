@@ -20,7 +20,7 @@ const TopBar = () => {
   }, [pathName]);
 
   return (
-    <div id='top-bar' className=' bg-red-normal py-1 '>
+    <div id='top-bar' className='hidden sm:block bg-red-normal py-1 '>
       <div className='top-bar-container container flex flex-row justify-between mx-auto text-white'>
         <div className=' '>
           <p>973-384-1054</p>
