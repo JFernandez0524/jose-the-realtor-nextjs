@@ -1,4 +1,6 @@
-import React from 'react';
+import Image from 'next/image';
+import logo from '@/assets/images/logo.png';
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
@@ -7,49 +9,52 @@ const Navbar = () => {
       className='container mx-auto flex flex-row justify-between py-2 items-center'
     >
       <div className='logo'>
-        <img src='./assets/images/logo.png' alt='' />
+        <Link href='/'>
+          <Image src={logo} alt='The Borrero Group Remax Logo' />
+        </Link>
       </div>
-      <nav className='container mx-auto'>
+      <nav>
         <ul className='flex flex-row justify-between flex-1 px-32'>
-          <li>
-            <a
-              href='http://'
+          <li className='mx-4'>
+            <Link
+              href='/buying'
               target='_blank'
-              className='hover:bg-red-normalHover hover:px-6 hover:text-white hover:py-2'
+              className='hover:bg-red-normalHover hover:px-6 hover:text-white hover:py-2 active:bg-red-normalActive'
               rel='noopener noreferrer'
             >
-              Blog
-            </a>
+              Buying
+            </Link>
           </li>
-          <li>
-            <a
-              href='http://'
+          <li className='mx-4'>
+            <Link
+              href='/selling'
               target='_blank'
               className='hover:bg-red-normalHover hover:px-6 hover:text-white hover:py-2'
               rel='noopener noreferrer'
             >
               Selling
-            </a>
+            </Link>
           </li>
-          <li>
-            <a
-              href='http://'
+          <li className='mx-4'>
+            <Link
+              href='/invest'
               target='_blank'
               className='hover:bg-red-normalHover hover:px-6 hover:text-white hover:py-2'
               rel='noopener noreferrer'
             >
-              Buying
-            </a>
+              Invest
+            </Link>
           </li>
-          <li>
-            <a
-              href='http://'
+
+          <li className='mx-4'>
+            <Link
+              href='/properties'
               target='_blank'
               className='hover:bg-red-normalHover hover:px-6 hover:text-white hover:py-2'
               rel='noopener noreferrer'
             >
-              Contact
-            </a>
+              Properties
+            </Link>
           </li>
         </ul>
       </nav>
