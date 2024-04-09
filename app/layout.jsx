@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <GoogleTagManager gtmId='GTM-N58TR9S' />
-      <body className={roboto.className}>
+      <body className={roboto.className + ' dark:bg-slate-900'}>
         <TopBar />
         <Navbar />
         {children}
